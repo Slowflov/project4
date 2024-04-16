@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+// General
+body {
+    font-family: $font-main;
+    background-color: $main-bg;
+    color: $dark;
+    font-size: 16px;
+}
+
+.container {
+    @include container;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+
+h2 {
+	font-family: inherit;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+h3 {
+	font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+h4 {
+	font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+// Classes
+.menu-composition {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.63px;
+    text-align: left;
+}
+
+.mini-btn {
+    padding: 7px 9px 6px 9px;
+    background-color: $min-btn;
+    color: $dark-green;
+    width: 80px;
+}
+
+.prymari__btn{
+    box-shadow: 0px 4px 10px 0px #00000040;
+    background: $accent;
+    color: $white;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+

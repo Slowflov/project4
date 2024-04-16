@@ -1,0 +1,44 @@
+.reservation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 30px 0;
+
+    @include mediaMobile {
+    margin: 39px 0 57px;
+    }
+}
+
+.reservation h2 {
+
+    @include mediaMobile {
+        width: 275px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.reservation__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 18px 0;
+    @include mediaMobile {
+        margin: 7px 0 27px;
+    }
+}
+
+.prymari__btn {
+    transition: transform 0.4s ease,
+        background-color 0.4s ease;
+
+    @include mediaMobile {
+        padding: 13px 19px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        color: #241537;
+    }
+}

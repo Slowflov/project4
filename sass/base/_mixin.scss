@@ -1,0 +1,21 @@
+@mixin mediaMobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mediaDesktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin container {
+    @media screen and (max-width: $mobile) {
+        margin: 0 auto;
+        padding: 0 5px;
+        max-width: 375px;
+    }
+
+
+}
