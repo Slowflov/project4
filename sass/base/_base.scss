@@ -72,5 +72,24 @@ h4 {
     line-height: 18px;
 }
 
+.heart-borfer {
+    color: $dark;
+}
+
+.heart-full {
+    opacity: 0;
+    transition-property: all;
+    transition: 0.5s;
+    &:hover {
+        opacity: 1;
+        background-color: $accent;
+    }
+
+    &.clicked {
+        opacity: 1;
+        color: $accent;
+    }
+}
+
 
 

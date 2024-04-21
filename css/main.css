@@ -108,6 +108,24 @@ h4 {
   line-height: 18px;
 }
 
+.heart-borfer {
+  color: #000000;
+}
+
+.heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition: 0.5s;
+}
+.heart-full:hover {
+  opacity: 1;
+  background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.heart-full.clicked {
+  opacity: 1;
+  color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
 .header {
   display: flex;
   flex-direction: column;
