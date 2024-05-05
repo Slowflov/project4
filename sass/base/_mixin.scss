@@ -1,11 +1,41 @@
-@mixin mediaMobile {
-    @media screen and (max-width: $mobile) {
+@mixin mediaDesktop {
+    @media screen and (max-width: $desktop) {
         @content;
     }
 }
 
-@mixin mediaDesktop {
-    @media screen and (max-width: $desktop) {
+@mixin laptop {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin devices {
+    @media screen and (max-width: $devices) {
+        @content;
+    }
+}
+
+@mixin smalldevices {
+    @media screen and (max-width: $smalldevices) {
+        @content;
+    }
+}
+
+@mixin mediaMobile {
+    @media screen and (max-width: $mobile) {
         @content;
     }
 }
@@ -16,6 +46,14 @@
         padding: 0 5px;
         max-width: 375px;
     }
+}
 
-
+@mixin border-turquoise {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: $min-btn;
 }

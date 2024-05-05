@@ -14,10 +14,15 @@
 
 a, a:link, a:visited  {
     text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover  {
     text-decoration: none;
+}
+
+i {
+	cursor: pointer;
 }
 
 img {

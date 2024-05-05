@@ -4,16 +4,29 @@
     flex-direction: row-reverse;
     padding: 57px 25px 30px 0;
 
+    @include tablet {
+    padding: 45px 25px 30px 25px;
+    }
+
+    @include smalldevices {
+        padding: 22px 0 22px 45px;
+        flex-direction: column;
+    }
+
     @include mediaMobile {
         padding: 22px 0 22px 18px;
-        flex-direction: column;
     }
 }
 
 .footer__img {
     fill: white;
     margin: -8px 0 0 70px;
-    @include mediaMobile {
+
+    @include tablet {
+        margin: -8px 0 0 40px;
+    }
+
+    @include smalldevices {
         margin: 0;
     }
 }
@@ -23,7 +36,7 @@
     display: flex;
     column-gap: 25px;
 
-    @include mediaMobile {
+    @include smalldevices {
         flex-direction: column;
         margin-top: 16px;
     }
@@ -34,9 +47,19 @@
     transition: font-size 0.3s ease, 
     transform 0.3s ease;
 
-    @include mediaMobile {
-        margin-bottom: 7px;
+    @include laptop {
+        font-size: 15px;
     }
+
+    @include tablet {
+        font-size: 12px;
+    }
+
+    @include smalldevices {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
     &:hover {
         font-size: 1.1em;
         transform: translateX(5px);

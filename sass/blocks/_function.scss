@@ -16,14 +16,19 @@
     display: flex;
     justify-content: center;
     gap: 0 24px;
+    padding: 0 15px;
 
-    @include mediaMobile {
+    @include laptop {
         flex-direction: column;
     }
 }
 
 .function__title {
     padding: 50px 0 25px 15px;
+
+    @include laptop {
+      text-align: center;
+    }
 
     @include mediaMobile {
         width: 275px;
@@ -32,13 +37,6 @@
         padding: 48px 0 26px;
         margin-left: 20px;
     }
-}
-
-.function__block p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-    color: $dark;
 }
 
 .function__block {
@@ -53,12 +51,14 @@
     text-align: center;
     margin-bottom: 50px;
 
-    @include mediaMobile {
+    @include laptop {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
+    justify-content: center;
+        margin: 0 auto 50px auto;
+        width: 80%;
+    }
 
+    @include mediaMobile {
         padding: 30px 0 27px;
         width: 320px;
         text-align: center;
@@ -90,12 +90,29 @@
     }
 }
 
+.function__block p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: $dark;
+
+    @include laptop {
+        font-size: 18px;
+    }
+}
+
+.function__block svg {
+    position: absolute;
+    left: 38px;
+    top: 28px;
+}
+
 .function__link p {
-    transition: transform 0.4s ease, 
-    color 0.4s ease;
+    transition: transform 0.4s ease,
+        color 0.4s ease;
 
     &:hover {
         transform: scale(1.2);
         color: $icon;
-}
+    }
 }

@@ -1,0 +1,81 @@
+// loader
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(94, 91, 91, 0.299);
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    animation: fadeOut 1s linear 1s forwards;
+}
+
+.loader-container {
+    height: 150px;
+    width: 150px;
+    border-top: 8px solid #9356dc;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #9356dc;
+    border-left: 8px solid transparent;
+    border-radius: 100px;
+    animation: rotateLoader 1s linear infinite;
+}
+
+// card-menu 
+.card-menu-entrees,
+.card-menu-plats,
+.card-menu-desserts {
+    opacity: 0;
+}
+
+.card-menu-entrees {
+    animation: fallFromSky 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.card-menu-plats {
+    animation: fallFromSky 2s cubic-bezier(0.42, 0, 0.58, 1) 0.5s forwards;
+}
+.card-menu-desserts {
+    animation: fallFromSky 2s cubic-bezier(0.42, 0, 0.58, 1) 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes rotateLoader {
+    0% {
+        transform: rotate(0turn);
+    }
+    
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+// menu animation
+@keyframes fallFromSky {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+// Menu card
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes reset {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}

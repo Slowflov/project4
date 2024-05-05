@@ -2,14 +2,18 @@
     padding-bottom: 66px;
 }
 
-.plate-presentation-container {
-    max-width: 1100px;
+.plate-presentation-inner {
+    max-width: 1050px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
 .plate-presentation__title {
     padding: 50px 0 25px;
+
+    @include laptop {
+        text-align: center;
+    }
 
     @include mediaMobile {
         padding: 54px 0 48px;
@@ -19,7 +23,13 @@
 .plate-presentation__blocks {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px 100px;
+    justify-content: center;
+    width: 100%;
+    gap: 40px 80px;
+
+    @include laptop {
+        gap: 30px 60px;
+    }
 
     @include mediaMobile {
         flex-direction: column;
@@ -30,31 +40,29 @@
 
 .plate-presentation__block {
     position: relative;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0px 4px 15px 0px #0000001A;
     background-color: $white;
     border-radius: 15px 15px 0 0;
-    width: 490px;
+    width: 46%;
 
+    @include laptop {
+        width: 42%;
+    }
+
+    @include tablet {
+        width: 87%;
+    }
 
     @include mediaMobile {
         width: 340px;
     }
-
-    // &:nth-child(2)::after {
-    //     position: absolute;
-    //     content: '';
-    //     bottom: 15px;
-    //     right: 15px;
-    //     width: 22px;
-    //     height: 21px;
-    //     background-image: url(../../images/restaurants/heart.png);
-    //     z-index: 8;
-    // }
 }
 
 
 .plate-presentation__block img {
-    width: 490px;
+    width: 100%;
     height: 195px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
@@ -84,8 +92,8 @@
     right: 20px;
     z-index: 9;
 
-    transition: box-shadow 0.4s ease, 
-    color 0.4s ease;
+    transition: box-shadow 0.4s ease,
+        color 0.4s ease;
 
     &:hover {
         box-shadow: 0 0 20px rgba(5, 170, 71, 5);
@@ -100,6 +108,13 @@
 .plate-presentation__text h3 {
     color: $dark;
     padding: 16px 0 5px 19px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        color: $dark-green;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+    }
 
     @include mediaMobile {
         padding: 16px 0 5px 13px;
@@ -117,9 +132,13 @@
     }
 }
 
+.plate-presentation_icon {
+    color: $dark;
+}
+
 .plate-presentation__text i {
     position: absolute;
     right: 25px;
     top: 23px;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
