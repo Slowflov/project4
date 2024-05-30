@@ -31,6 +31,11 @@
 .menu-heart {
     margin-left: 27px;
     margin-top: -28px;
+
+    @include mediaMobile {
+      margin-left: 10px;
+      padding-right: 20px;
+    }
 }
 
 // card

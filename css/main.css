@@ -707,6 +707,12 @@ h4 {
   margin-left: 27px;
   margin-top: -28px;
 }
+@media screen and (max-width: 375px) {
+  .menu-heart {
+    margin-left: 10px;
+    padding-right: 20px;
+  }
+}
 
 .card-wrapper {
   display: flex;
