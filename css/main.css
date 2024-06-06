@@ -1,5 +1,6 @@
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
@@ -13,7 +14,9 @@
 }
 
 /* Links */
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   text-decoration: none;
   cursor: pointer;
 }
@@ -31,11 +34,17 @@ img {
 }
 
 /* Common */
-aside, nav, footer, header, section, main {
+aside,
+nav,
+footer,
+header,
+section,
+main {
   display: block;
 }
 
-ul, ul li {
+ul,
+ul li {
   list-style: none;
 }
 
@@ -113,6 +122,7 @@ h4 {
   line-height: 18px;
   transition: transform 0.4s ease, background-color 0.4s ease;
 }
+
 .prymari__btn:hover {
   transform: scale(1.1);
   color: #99E2D0;
@@ -123,6 +133,7 @@ h4 {
   transition-property: all;
   transition: 0.5s;
 }
+
 .heart-full:hover {
   color: transparent;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
@@ -131,6 +142,7 @@ h4 {
   transition: all 400ms;
   opacity: 1;
 }
+
 .heart-full.clicked {
   opacity: 1;
 }
@@ -152,6 +164,7 @@ h4 {
   background-color: #FFFFFF;
   padding: 30px 0 31px;
 }
+
 @media screen and (max-width: 375px) {
   .header__link {
     padding: 14px 0 13px;
@@ -166,6 +179,7 @@ h4 {
   width: 200px;
   height: 34px;
 }
+
 @media screen and (max-width: 375px) {
   .header__logo {
     width: 197px;
@@ -202,6 +216,7 @@ h4 {
   align-items: center;
   margin: 30px 0;
 }
+
 @media screen and (max-width: 375px) {
   .reservation {
     margin: 39px 0 57px;
@@ -222,6 +237,7 @@ h4 {
   line-height: 21px;
   margin: 18px 0;
 }
+
 @media screen and (max-width: 375px) {
   .reservation__subtitle {
     margin: 7px 0 27px;
@@ -237,6 +253,7 @@ h4 {
 .function {
   background-color: #FFFFFF;
 }
+
 @media screen and (max-width: 375px) {
   .function {
     padding-bottom: 43px;
@@ -255,6 +272,7 @@ h4 {
   gap: 0 24px;
   padding: 0 15px;
 }
+
 @media screen and (max-width: 1024px) {
   .function__blocks {
     flex-direction: column;
@@ -264,11 +282,13 @@ h4 {
 .function__title {
   padding: 50px 0 25px 15px;
 }
+
 @media screen and (max-width: 1024px) {
   .function__title {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 375px) {
   .function__title {
     width: 275px;
@@ -290,6 +310,7 @@ h4 {
   text-align: center;
   margin-bottom: 50px;
 }
+
 @media screen and (max-width: 1024px) {
   .function__block {
     display: flex;
@@ -298,6 +319,7 @@ h4 {
     width: 80%;
   }
 }
+
 @media screen and (max-width: 375px) {
   .function__block {
     padding: 30px 0 27px;
@@ -306,6 +328,7 @@ h4 {
     margin-bottom: 25px;
   }
 }
+
 .function__block::before {
   content: "1";
   position: absolute;
@@ -321,9 +344,11 @@ h4 {
   background-color: #9356DC;
   transform: translateX(-50%);
 }
+
 .function__block:nth-child(2)::before {
   content: "2";
 }
+
 .function__block:nth-child(3)::before {
   content: "3";
 }
@@ -334,6 +359,7 @@ h4 {
   line-height: 18.75px;
   color: #000000;
 }
+
 @media screen and (max-width: 1024px) {
   .function__block p {
     font-size: 18px;
@@ -349,6 +375,7 @@ h4 {
 .function__link p {
   transition: transform 0.4s ease, color 0.4s ease;
 }
+
 .function__link p:hover {
   transform: scale(1.2);
   color: #9356DC;
@@ -367,11 +394,13 @@ h4 {
 .plate-presentation__title {
   padding: 50px 0 25px;
 }
+
 @media screen and (max-width: 1024px) {
   .plate-presentation__title {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 375px) {
   .plate-presentation__title {
     padding: 54px 0 48px;
@@ -385,11 +414,13 @@ h4 {
   width: 100%;
   gap: 40px 80px;
 }
+
 @media screen and (max-width: 1024px) {
   .plate-presentation__blocks {
     gap: 30px 60px;
   }
 }
+
 @media screen and (max-width: 375px) {
   .plate-presentation__blocks {
     flex-direction: column;
@@ -407,16 +438,19 @@ h4 {
   border-radius: 15px 15px 0 0;
   width: 46%;
 }
+
 @media screen and (max-width: 1024px) {
   .plate-presentation__block {
     width: 42%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .plate-presentation__block {
     width: 87%;
   }
 }
+
 @media screen and (max-width: 375px) {
   .plate-presentation__block {
     width: 340px;
@@ -426,10 +460,10 @@ h4 {
 .plate-presentation__block img {
   width: 100%;
   height: 195px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
+
 @media screen and (max-width: 375px) {
   .plate-presentation__block img {
     width: 340px;
@@ -441,6 +475,7 @@ h4 {
   overflow: hidden;
   position: relative;
 }
+
 .plate-presentation__link:hover img {
   transform: scale(1.1);
 }
@@ -456,6 +491,7 @@ h4 {
   z-index: 9;
   transition: box-shadow 0.4s ease, color 0.4s ease;
 }
+
 .mini-btn:hover {
   box-shadow: 0 0 20px rgb(5, 170, 71);
   color: #06bf63;
@@ -470,11 +506,13 @@ h4 {
   padding: 16px 0 5px 19px;
   transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
+
 .plate-presentation__text h3:hover {
   color: #008766;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transform: translateY(-5px);
 }
+
 @media screen and (max-width: 375px) {
   .plate-presentation__text h3 {
     padding: 16px 0 5px 13px;
@@ -487,6 +525,7 @@ h4 {
   line-height: 19.92px;
   padding: 0 0 12px 19px;
 }
+
 @media screen and (max-width: 375px) {
   .plate-presentation__text p {
     padding: 0 0 12px 13px;
@@ -510,17 +549,20 @@ h4 {
   flex-direction: row-reverse;
   padding: 57px 25px 30px 0;
 }
+
 @media screen and (max-width: 768px) {
   .footer {
     padding: 45px 25px 30px 25px;
   }
 }
+
 @media screen and (max-width: 485px) {
   .footer {
     padding: 22px 0 22px 45px;
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 375px) {
   .footer {
     padding: 22px 0 22px 18px;
@@ -531,11 +573,13 @@ h4 {
   fill: white;
   margin: -8px 0 0 70px;
 }
+
 @media screen and (max-width: 768px) {
   .footer__img {
     margin: -8px 0 0 40px;
   }
 }
+
 @media screen and (max-width: 485px) {
   .footer__img {
     margin: 0;
@@ -545,9 +589,9 @@ h4 {
 .footer__info {
   color: #FFFFFF;
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
 }
+
 @media screen and (max-width: 485px) {
   .footer__info {
     flex-direction: column;
@@ -559,22 +603,26 @@ h4 {
   color: #FFFFFF;
   transition: font-size 0.3s ease, transform 0.3s ease;
 }
+
 @media screen and (max-width: 1024px) {
   .footer__info p {
     font-size: 15px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .footer__info p {
     font-size: 12px;
   }
 }
+
 @media screen and (max-width: 485px) {
   .footer__info p {
     font-size: 15px;
     margin-bottom: 10px;
   }
 }
+
 .footer__info p:hover {
   font-size: 1.1em;
   transform: translateX(5px);
@@ -628,49 +676,59 @@ h4 {
     transform: translateY(20px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes fadeOut {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     z-index: -1;
   }
 }
+
 @keyframes rotateLoader {
   0% {
     transform: rotate(0turn);
   }
+
   100% {
     transform: rotate(1turn);
   }
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes reset {
   0% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
+
 .restaurant-img img {
   width: 100%;
   height: 240px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .custom-background {
@@ -707,6 +765,7 @@ h4 {
   margin-left: 27px;
   margin-top: -28px;
 }
+
 @media screen and (max-width: 375px) {
   .menu-heart {
     margin-left: 10px;
@@ -738,6 +797,7 @@ h4 {
   line-height: 18px;
   padding-bottom: 4px;
 }
+
 .menu-type__title__nome::before {
   content: "";
   position: absolute;
@@ -757,9 +817,11 @@ h4 {
   background: #FFFFFF;
   overflow: hidden;
 }
+
 .card-menu:hover .card-prix-border {
   margin-right: 0;
 }
+
 .card-menu:hover .card-prix-border span i {
   animation: spin 0.5s linear infinite, reset 0.3s linear 0.1s forwards;
 }
@@ -810,4 +872,6 @@ h4 {
   display: flex;
   justify-content: center;
   margin: 40px auto 40px auto;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
